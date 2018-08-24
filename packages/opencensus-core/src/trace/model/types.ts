@@ -79,6 +79,8 @@ export interface SpanContext {
   traceId: string;
   /** Span ID */
   spanId: string;
+  /** Baggage **/
+  baggage?: string
   /** Options */
   options?: number;
 }
@@ -131,7 +133,9 @@ export interface Span {
   /** Constructs a new SpanBaseModel instance. */
   readonly traceId: string;
 
-  /** Indicates if span was started. */
+  readonly baggage: string;
+
+    /** Indicates if span was started. */
   readonly started: boolean;
 
   /** Indicates if span was ended. */

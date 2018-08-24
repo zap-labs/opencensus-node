@@ -32,6 +32,8 @@ export class RootSpan extends SpanBase implements types.RootSpan {
   private spansLocal: types.Span[];
   /** It's trace ID. */
   private traceIdLocal: string;
+  /** It's baggage **/
+  private baggageLocal: string;
   /** set isRootSpan = true */
   readonly isRootSpan = true;
 
@@ -47,6 +49,9 @@ export class RootSpan extends SpanBase implements types.RootSpan {
         context && context.spanContext && context.spanContext.traceId ?
         context.spanContext.traceId :
         (uuid.v4().split('-').join(''));
+    this.baggageLocal =
+          context && context.spanContext && context.spanContext.baggage ?
+              context.spanContext.baggage : '';
     this.name = context && context.name ? context.name : 'undefined';
     if (context && context.spanContext) {
       this.parentSpanId = context.spanContext.spanId || '';
@@ -64,6 +69,11 @@ export class RootSpan extends SpanBase implements types.RootSpan {
   /** Gets trace id from rootspan instance. */
   get traceId(): string {
     return this.traceIdLocal;
+  }
+
+  /** Gets baggage from rootspan instance. */
+  get baggage(): string {
+    return this.baggageLocal;
   }
 
   /** Starts a rootspan instance. */
