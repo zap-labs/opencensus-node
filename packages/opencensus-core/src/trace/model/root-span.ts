@@ -32,7 +32,7 @@ export class RootSpan extends SpanBase implements types.RootSpan {
   private spansLocal: types.Span[];
   /** It's trace ID. */
   private traceIdLocal: string;
-  /** It's baggage **/
+  /** It's baggage */
   private baggageLocal: string;
   /** set isRootSpan = true */
   readonly isRootSpan = true;

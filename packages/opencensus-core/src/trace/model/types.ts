@@ -79,7 +79,7 @@ export interface SpanContext {
   traceId: string;
   /** Span ID */
   spanId: string;
-  /** Baggage **/
+  /** Baggage */
   baggage?: string
   /** Options */
   options?: number;
