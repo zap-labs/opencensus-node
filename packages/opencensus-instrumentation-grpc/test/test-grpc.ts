@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import {CoreTracer, RootSpan, Span, SpanEventListener, TracerConfig} from '@opencensus/core';
-import {logger} from '@opencensus/core';
-import {B3Format} from '@opencensus/propagation-b3';
+import {CoreTracer, RootSpan, Span, SpanEventListener, TracerConfig} from '@zaplabs/opencensus-core';
+import {logger} from '@zaplabs/opencensus-core';
+import {B3Format} from '@zaplabs/opencensus-propagation-b3';
 import * as assert from 'assert';
 import * as grpcModule from 'grpc';
 import * as path from 'path';

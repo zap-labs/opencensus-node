@@ -15,8 +15,8 @@
  */
 
 
-import * as core from '@opencensus/core';
-import {logger} from '@opencensus/core';
+import * as core from '@zaplabs/opencensus-core';
+import {logger} from '@zaplabs/opencensus-core';
 import * as assert from 'assert';
 
 import {defaultConfig} from '../src/trace/config/default-config';

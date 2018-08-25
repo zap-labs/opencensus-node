@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import {Func, HeaderGetter, HeaderSetter, Span, TraceOptions, Tracer} from '@opencensus/core';
-import {HttpPlugin} from '@opencensus/instrumentation-http';
+import {Func, HeaderGetter, HeaderSetter, Span, TraceOptions, Tracer} from '@zaplabs/opencensus-core';
+import {HttpPlugin} from '@zaplabs/opencensus-instrumentation-http';
 import * as http from 'http';
 import * as http2 from 'http2';
 import * as net from 'net';

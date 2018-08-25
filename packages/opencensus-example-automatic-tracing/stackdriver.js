@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-const tracing = require('@opencensus/nodejs');
-const stackdriver = require('@opencensus/exporter-stackdriver');
+const tracing = require('@zaplabs/opencensus-nodejs');
+const stackdriver = require('@zaplabs/opencensus-exporter-stackdriver');
 
 // Add your project id to the Stackdriver options
 const exporter = new stackdriver.StackdriverTraceExporter({projectId: "your-project-id"});

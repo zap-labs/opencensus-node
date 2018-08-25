@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import {BasePlugin, Func, HeaderGetter, HeaderSetter, RootSpan, Span, Tracer} from '@opencensus/core';
-import {logger, Logger} from '@opencensus/core';
+import {BasePlugin, Func, HeaderGetter, HeaderSetter, RootSpan, Span, Tracer} from '@zaplabs/opencensus-core';
+import {logger, Logger} from '@zaplabs/opencensus-core';
 import * as httpModule from 'http';
 import * as semver from 'semver';
 import * as shimmer from 'shimmer';

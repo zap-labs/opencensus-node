@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {HeaderGetter, HeaderSetter} from '@opencensus/core';
+import {HeaderGetter, HeaderSetter} from '@zaplabs/opencensus-core';
 import * as assert from 'assert';
 
 import {JaegerFormat} from '../src/';

@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import * as core from '@opencensus/core';
-import {Logger, logger} from '@opencensus/core';
+import * as core from '@zaplabs/opencensus-core';
+import {Logger, logger} from '@zaplabs/opencensus-core';
 
 import * as extend from 'extend';
 

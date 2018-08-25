@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {AggregationType, Bucket, DistributionData, logger, Logger, Measurement, MeasureType, StatsEventListener, View} from '@opencensus/core';
+import {AggregationType, Bucket, DistributionData, logger, Logger, Measurement, MeasureType, StatsEventListener, View} from '@zaplabs/opencensus-core';
 import {auth, JWT} from 'google-auth-library';
 import {google} from 'googleapis';
 

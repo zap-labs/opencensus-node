@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {AggregationType, BaseView, logger, Logger, Measure, Measurement, MeasureType, MeasureUnit, Stats, View} from '@opencensus/core';
+import {AggregationType, BaseView, logger, Logger, Measure, Measurement, MeasureType, MeasureUnit, Stats, View} from '@zaplabs/opencensus-core';
 import * as assert from 'assert';
 import * as fs from 'fs';
 import * as mocha from 'mocha';

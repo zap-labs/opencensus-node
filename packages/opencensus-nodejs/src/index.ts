@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import * as core from '@opencensus/core';
+import * as core from '@zaplabs/opencensus-core';
 import {Tracing} from './trace/tracing';
 
 const tracing: core.Tracing = Tracing.instance;

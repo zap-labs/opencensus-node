@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import {Exporter, ExporterBuffer, ExporterConfig, RootSpan, Span, SpanContext} from '@opencensus/core';
-import {logger, Logger} from '@opencensus/core';
+import {Exporter, ExporterBuffer, ExporterConfig, RootSpan, Span, SpanContext} from '@zaplabs/opencensus-core';
+import {logger, Logger} from '@zaplabs/opencensus-core';
 import {auth, JWT} from 'google-auth-library';
 import {google} from 'googleapis';
 

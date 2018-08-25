@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {RootSpan, Span} from '@opencensus/core';
+import {RootSpan, Span} from '@zaplabs/opencensus-core';
 import * as ejs from 'ejs';
 import * as pkgDir from 'pkg-dir';
 
