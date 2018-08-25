@@ -1,5 +1,5 @@
 {
-  "name": "@opencensus/instrumentation-https",
+  "name": "@zaplabs/opencensus-instrumentation-https",
   "version": "0.0.3",
   "description": "Opencensus https automatic instrumentation package.",
   "main": "build/src/index.js",
@@ -56,8 +56,8 @@
     "typescript": "~2.7.2"
   },
   "dependencies": {
-    "@opencensus/core": "^0.0.3",
-    "@opencensus/instrumentation-http": "^0.0.3",
+    "@zaplabs/opencensus-core": "^0.0.3",
+    "@zaplabs/opencensus-instrumentation-http": "^0.0.3",
     "semver": "^5.5.0",
     "shimmer": "^1.2.0"
   }

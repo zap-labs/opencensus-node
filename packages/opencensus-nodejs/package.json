@@ -1,5 +1,5 @@
 {
-  "name": "@opencensus/nodejs",
+  "name": "@zaplabs/opencensus-nodejs",
   "version": "0.0.3",
   "description": "OpenCensus is a toolkit for collecting application performance and behavior data.",
   "main": "build/src/index.js",
@@ -53,8 +53,8 @@
     "typescript": "~2.6.1"
   },
   "dependencies": {
-    "@opencensus/core": "^0.0.3",
-    "@opencensus/instrumentation-all": "^0.0.3",
+    "@zaplabs/opencensus-core": "^0.0.3",
+    "@zaplabs/opencensus-instrumentation-all": "^0.0.3",
     "extend": "^3.0.1",
     "require-in-the-middle": "^3.0.0"
   }
