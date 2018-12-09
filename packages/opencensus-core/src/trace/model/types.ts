@@ -141,7 +141,6 @@ export interface Span {
 
   readonly baggage: string;
 
-    /** Indicates if span was started. */
   /** Trace state associated with span */
   readonly traceState: TraceState;
 

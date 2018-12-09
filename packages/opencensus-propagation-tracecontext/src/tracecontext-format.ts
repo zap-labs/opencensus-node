@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {HeaderGetter, HeaderSetter, Propagation, SpanContext} from '@opencensus/core';
+import {HeaderGetter, HeaderSetter, Propagation, SpanContext} from '@zaplabs/opencensus-core';
 import * as crypto from 'crypto';
 
 import {isValidOption, isValidSpanId, isValidTraceId, isValidVersion} from './validators';

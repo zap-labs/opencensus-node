@@ -1,6 +1,6 @@
 {
   "name": "@zaplabs/opencensus-instrumentation-http2",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Opencensus http2 automatic instrumentation package.",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
@@ -55,8 +55,8 @@
     "typescript": "~2.6.1"
   },
   "dependencies": {
-    "@zaplabs/opencensus-core": "^0.0.6",
-    "@zaplabs/opencensus-instrumentation-http": "^0.0.6",
+    "@zaplabs/opencensus-core": "^0.0.7",
+    "@zaplabs/opencensus-instrumentation-http": "^0.0.7",
     "semver": "^5.5.0",
     "shimmer": "^1.2.0"
   }

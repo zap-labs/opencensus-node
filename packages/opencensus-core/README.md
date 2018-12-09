@@ -9,7 +9,7 @@ The library is in alpha stage and the API is subject to change.
 
 Install the opencensus-core package with NPM:
 ```bash
-npm install @opencensus/core
+npm install @zaplabs/opencensus-core
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ npm install @opencensus/core
 To enable metrics, we’ll import a few items from OpenCensus Core package.
 
 ```javascript
-const { Stats, MeasureUnit, AggregationType } = require('@opencensus/core');
+const { Stats, MeasureUnit, AggregationType } = require('@zaplabs/opencensus-core');
 
 // Create the Stats manager
 const stats = new Stats();

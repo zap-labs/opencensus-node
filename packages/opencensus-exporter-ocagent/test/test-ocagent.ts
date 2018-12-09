@@ -15,8 +15,8 @@
  */
 
 import * as protoLoader from '@grpc/proto-loader';
-import {RootSpan, TraceOptions, Tracing} from '@opencensus/core';
-import * as nodeTracing from '@opencensus/nodejs';
+import {RootSpan, TraceOptions, Tracing} from '@zaplabs/opencensus-core';
+import * as nodeTracing from '@zaplabs/opencensus-nodejs';
 import * as assert from 'assert';
 import {EventEmitter} from 'events';
 import * as grpc from 'grpc';

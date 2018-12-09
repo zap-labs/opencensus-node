@@ -15,8 +15,8 @@
  */
 
 import * as protoLoader from '@grpc/proto-loader';
-import {Exporter, ExporterBuffer, ExporterConfig, logger, Logger, RootSpan, SamplerBuilder, version as coreVersion} from '@opencensus/core';
-import * as tracing from '@opencensus/nodejs';
+import {Exporter, ExporterBuffer, ExporterConfig, logger, Logger, RootSpan, SamplerBuilder, version as coreVersion} from '@zaplabs/opencensus-core';
+import * as tracing from '@zaplabs/opencensus-nodejs';
 import * as grpc from 'grpc';
 import * as os from 'os';
 

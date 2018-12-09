@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {AggregationType, CountData, DistributionData} from '@opencensus/core';
+import {AggregationType, CountData, DistributionData} from '@zaplabs/opencensus-core';
 
 import {StatsParams} from '../../zpages';
 
