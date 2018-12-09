@@ -26,7 +26,9 @@ import * as samplerTypes from '../sampler/types';
 export type Func<T> = (...args: any[]) => T;
 
 /** Maps a label to a string, number or boolean. */
-export interface Attributes { [attributeKey: string]: string|number|boolean; }
+export interface Attributes {
+  [attributeKey: string]: string|number|boolean;
+}
 
 /** A text annotation with a set of attributes. */
 export interface Annotation {
@@ -73,6 +75,8 @@ export interface TraceOptions {
   kind?: string;
 }
 
+export type TraceState = string;
+
 /** Defines the span context */
 export interface SpanContext {
   /** Trace ID */
@@ -83,6 +87,8 @@ export interface SpanContext {
   baggage?: string
   /** Options */
   options?: number;
+  /** TraceState */
+  traceState?: TraceState;
 }
 
 /** Defines an end span event listener */
@@ -130,12 +136,16 @@ export interface Span {
   /** true if span is a RootSpan */
   isRootSpan: boolean;
 
-  /** Constructs a new SpanBaseModel instance. */
+  /** Trace id asscoiated with span. */
   readonly traceId: string;
 
   readonly baggage: string;
 
     /** Indicates if span was started. */
+  /** Trace state associated with span */
+  readonly traceState: TraceState;
+
+  /** Indicates if span was started. */
   readonly started: boolean;
 
   /** Indicates if span was ended. */

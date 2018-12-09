@@ -41,7 +41,7 @@
     "@types/mocha": "^2.2.48",
     "@types/nock": "^9.1.3",
     "@types/node": "^9.4.7",
-    "gts": "^0.5.1",
+    "gts": "^0.9.0",
     "mocha": "^5.0.4",
     "ncp": "^2.0.0",
     "nock": "^9.2.6",
@@ -52,6 +52,7 @@
   "dependencies": {
     "@zaplabs/opencensus-core": "^0.0.6",
     "google-auth-library": "^1.5.0",
-    "googleapis": "27.0.0"
+    "googleapis": "27.0.0",
+    "hex2dec": "^1.1.0"
   }
 }

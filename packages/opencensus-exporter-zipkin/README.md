@@ -22,13 +22,16 @@ wget -O zipkin.jar 'https://search.maven.org/remote_content?g=io.zipkin.java&a=z
 java -jar zipkin.jar
 ```
 
-Instance the exporter on your application and pass the options. For javascript:
+Instance the exporter on your application and pass the options, it must contain a service name and, optionaly, an URL. If no URL is passed, `http://localhost:9411/api/v2/spans` is used as default.
+
+For javascript:
 
 ```javascript
 var tracing = require('@opencensus/nodejs');
 var zipkin = require('@opencensus/exporter-zipkin');
 
-// Add your zipkin url and application name to the Zipkin options
+// Add your zipkin url (ex http://localhost:9411/api/v2/spans)
+// and application name to the Zipkin options
 var options = {
   url: 'your-zipkin-url',
   serviceName: 'your-application-name'
@@ -42,7 +45,8 @@ Similarly for Typescript:
 import * as tracing from '@opencensus/nodejs';
 import { Zipkin } from '@opencensus/exporter-zipkin';
 
-// Add your zipkin url and application name to the Zipkin options
+// Add your zipkin url (ex http://localhost:9411/api/v2/spans)
+// and application name to the Zipkin options
 const options = {
   url: 'your-zipkin-url',
   serviceName: 'your-application-name'

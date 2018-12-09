@@ -54,7 +54,7 @@ export class HttpPlugin extends BasePlugin {
    * Patches HTTP incoming and outcoming request functions.
    */
   protected applyPatch() {
-    this.logger.debug('applying pacth to %s@%s', this.moduleName, this.version);
+    this.logger.debug('applying patch to %s@%s', this.moduleName, this.version);
 
     shimmer.wrap(
         this.moduleExports, 'request', this.getPatchOutgoingRequestFunction());
@@ -198,9 +198,11 @@ export class HttpPlugin extends BasePlugin {
         }
 
         // Makes sure the url is an url object
+        let pathname = '';
         if (typeof (options) === 'string') {
           options = url.parse(options);
           arguments[0] = options;
+          pathname = options.pathname;
         } else {
           // Do not trace ourselves
           if (options.headers &&
@@ -208,6 +210,11 @@ export class HttpPlugin extends BasePlugin {
             plugin.logger.debug(
                 'header with "x-opencensus-outgoing-request" - do not trace');
             return original.apply(this, arguments);
+          }
+
+          try {
+            pathname = options.pathname || url.parse(options.path).pathname;
+          } catch (e) {
           }
         }
 
@@ -217,8 +224,7 @@ export class HttpPlugin extends BasePlugin {
 
         plugin.logger.debug('%s plugin outgoingRequest', plugin.moduleName);
         const traceOptions = {
-          name:
-              `${request.method ? request.method : 'GET'} ${options.pathname}`,
+          name: `${request.method ? request.method : 'GET'} ${pathname}`,
           kind: 'CLIENT',
         };
 
@@ -256,6 +262,11 @@ export class HttpPlugin extends BasePlugin {
     return (span: Span): httpModule.ClientRequest => {
       plugin.logger.debug('makeRequestTrace');
 
+      if (!span) {
+        plugin.logger.debug('makeRequestTrace span is null');
+        return request;
+      }
+
       const setter: HeaderSetter = {
         setHeader(name: string, value: string) {
           request.setHeader(name, value);
@@ -265,11 +276,6 @@ export class HttpPlugin extends BasePlugin {
       const propagation = plugin.tracer.propagation;
       if (propagation) {
         propagation.inject(setter, span.spanContext);
-      }
-
-      if (!span) {
-        plugin.logger.debug('makeRequestTrace span is null');
-        return request;
       }
 
       request.on('response', (response: httpModule.ClientResponse) => {
@@ -321,7 +327,7 @@ export class HttpPlugin extends BasePlugin {
         span.end();
       });
 
-      plugin.logger.debug('makeRequestTrace retun request');
+      plugin.logger.debug('makeRequestTrace return request');
       return request;
     };
   }
