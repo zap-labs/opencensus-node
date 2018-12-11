@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {Bucket, ExporterConfig} from '@opencensus/core';
+import {Bucket, ExporterConfig} from '@zaplabs/opencensus-core';
 import {JWT} from 'google-auth-library';
 
 export type TranslatedTrace = {

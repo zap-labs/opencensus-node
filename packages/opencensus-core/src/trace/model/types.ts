@@ -83,6 +83,8 @@ export interface SpanContext {
   traceId: string;
   /** Span ID */
   spanId: string;
+  /** Baggage */
+  baggage?: string
   /** Options */
   options?: number;
   /** TraceState */
@@ -136,6 +138,8 @@ export interface Span {
 
   /** Trace id asscoiated with span. */
   readonly traceId: string;
+
+  readonly baggage: string;
 
   /** Trace state associated with span */
   readonly traceState: TraceState;

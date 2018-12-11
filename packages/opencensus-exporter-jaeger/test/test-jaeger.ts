@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import {CoreTracer, RootSpan, TracerConfig} from '@opencensus/core';
-import {logger, Logger} from '@opencensus/core';
+import {CoreTracer, RootSpan, TracerConfig} from '@zaplabs/opencensus-core';
+import {logger, Logger} from '@zaplabs/opencensus-core';
 import * as assert from 'assert';
 import * as fs from 'fs';
 import * as mocha from 'mocha';

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {Logger, Plugin, PluginNames, Tracer} from '@opencensus/core';
+import {Logger, Plugin, PluginNames, Tracer} from '@zaplabs/opencensus-core';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as hook from 'require-in-the-middle';

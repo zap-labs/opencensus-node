@@ -19,7 +19,7 @@
  * OpenCensus to Stackdriver.
  */
 
-const { Stats, MeasureUnit, AggregationType } = require("@opencensus/core");
+const { Stats, MeasureUnit, AggregationType } = require("@zaplabs/opencensus-core");
 const {
   StackdriverStatsExporter
 } = require("@opencensus/exporter-stackdriver");

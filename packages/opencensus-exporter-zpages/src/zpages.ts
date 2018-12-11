@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import {AggregationData, Exporter, ExporterConfig, Measure, Measurement, RootSpan, Span, StatsEventListener, Tags, View} from '@opencensus/core';
-import {logger, Logger} from '@opencensus/core';
+import {AggregationData, Exporter, ExporterConfig, Measure, Measurement, RootSpan, Span, StatsEventListener, Tags, View} from '@zaplabs/opencensus-core';
+import {logger, Logger} from '@zaplabs/opencensus-core';
 import * as express from 'express';
 import * as http from 'http';
 

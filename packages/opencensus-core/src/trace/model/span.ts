@@ -42,6 +42,11 @@ export class Span extends SpanBase implements types.Span {
     return this.root.traceId;
   }
 
+  /** Gets baggage of span. */
+  get baggage(): string {
+        return this.root.baggage;
+  }
+
   get traceState(): string {
     return this.root.traceState;
   }

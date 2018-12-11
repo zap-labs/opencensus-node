@@ -9,8 +9,8 @@ This project is still at an early stage of development, it's subject to change.
 
 Install OpenCensus Agent Exporter with:
 ```bash
-npm install @opencensus/nodejs
-npm install @opencensus/exporter-ocagent
+npm install @zaplabs/opencensus-nodejs
+npm install @zaplabs/opencensus-exporter-ocagent
 ```
 
 ## Usage
@@ -18,8 +18,8 @@ npm install @opencensus/exporter-ocagent
 Instance the exporter on your application. For javascript:
 
 ```javascript
-var tracing = require('@opencensus/nodejs');
-var ocagent = require('@opencensus/exporter-ocagent');
+var tracing = require('@zaplabs/opencensus-nodejs');
+var ocagent = require('@zaplabs/opencensus-exporter-ocagent');
 
 var exporter = new ocagent.OCAgentExporter({
   // ... configuration options ...
@@ -31,8 +31,8 @@ tracing.registerExporter(exporter).start();
 Similarly for Typescript:
 
 ```typescript
-import * as tracing from '@opencensus/nodejs';
-import { OCAgentExporter } from '@opencensus/exporter-ocagent';
+import * as tracing from '@zaplabs/opencensus-nodejs';
+import { OCAgentExporter } from '@zaplabs/opencensus-exporter-ocagent';
 
 const exporter = new OCAgentExporter({
   // ... configuration options ...

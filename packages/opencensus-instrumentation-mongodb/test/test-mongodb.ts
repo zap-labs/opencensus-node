@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import {CoreTracer, RootSpan, Span, SpanEventListener} from '@opencensus/core';
-import {logger} from '@opencensus/core';
+import {CoreTracer, RootSpan, Span, SpanEventListener} from '@zaplabs/opencensus-core';
+import {logger} from '@zaplabs/opencensus-core';
 import * as assert from 'assert';
 import {accessSync} from 'fs';
 import * as http from 'http';

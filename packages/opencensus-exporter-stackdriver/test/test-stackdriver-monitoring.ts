@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {AggregationType, BaseView, logger, Logger, Measurement, MeasureUnit, Stats} from '@opencensus/core';
+import {AggregationType, BaseView, logger, Logger, Measurement, MeasureUnit, Stats} from '@zaplabs/opencensus-core';
 import * as assert from 'assert';
 import * as fs from 'fs';
 import * as nock from 'nock';

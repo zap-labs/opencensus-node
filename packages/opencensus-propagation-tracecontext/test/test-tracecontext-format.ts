@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {HeaderGetter, HeaderSetter, SpanContext} from '@opencensus/core';
+import {HeaderGetter, HeaderSetter, SpanContext} from '@zaplabs/opencensus-core';
 import * as assert from 'assert';
 
 import {TraceContextFormat} from '../src/';

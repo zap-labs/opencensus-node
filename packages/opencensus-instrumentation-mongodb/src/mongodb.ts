@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import {BasePlugin, Func, Span} from '@opencensus/core';
-import {logger, Logger} from '@opencensus/core';
+import {BasePlugin, Func, Span} from '@zaplabs/opencensus-core';
+import {logger, Logger} from '@zaplabs/opencensus-core';
 import * as mongodb from 'mongodb';
 import * as semver from 'semver';
 import * as shimmer from 'shimmer';

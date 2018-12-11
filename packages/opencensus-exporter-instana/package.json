@@ -1,5 +1,5 @@
 {
-  "name": "@opencensus/exporter-instana",
+  "name": "@zaplabs/opencensus-exporter-instana",
   "version": "0.0.7",
   "description": "OpenCensus Instana Exporter allows the user to send collected traces with OpenCensus Node.js to Instana.",
   "main": "build/src/index.js",
@@ -53,6 +53,6 @@
     "typescript": "~2.6.1"
   },
   "dependencies": {
-    "@opencensus/core": "^0.0.7"
+    "@zaplabs/opencensus-core": "^0.0.7"
   }
 }

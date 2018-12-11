@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {Span} from '@opencensus/core';
+import {Span} from '@zaplabs/opencensus-core';
 import * as path from 'path';
 
 const indexPath = path.dirname(require.resolve('jaeger-client'));

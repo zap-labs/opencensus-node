@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import {SamplerBuilder} from '@opencensus/core';
-import * as tracing from '@opencensus/nodejs';
+import {SamplerBuilder} from '@zaplabs/opencensus-core';
+import * as tracing from '@zaplabs/opencensus-nodejs';
 import * as ejs from 'ejs';
 import * as pkgDir from 'pkg-dir';
 

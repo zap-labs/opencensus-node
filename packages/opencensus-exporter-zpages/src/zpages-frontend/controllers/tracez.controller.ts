@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {Span} from '@opencensus/core';
+import {Span} from '@zaplabs/opencensus-core';
 import * as express from 'express';
 
 import {TracezPageHandler} from './../page-handlers/tracez.page-handler';

@@ -1,13 +1,13 @@
 {
-  "name": "@opencensus/example-automatic-tracing",
+  "name": "@zaplabs/opencensus-example-automatic-tracing",
   "description": "These example show hot to trace a simple HTTP server and export the trace state.",
   "version": "0.0.7",
   "private": true,
   "main": "zipkin.js",
   "dependencies": {
-    "@opencensus/exporter-instana": "^0.0.7",
-    "@opencensus/exporter-stackdriver": "^0.0.7",
-    "@opencensus/exporter-zipkin": "^0.0.7",
-    "@opencensus/nodejs": "^0.0.7"
+    "@zaplabs/opencensus-exporter-instana": "^0.0.7",
+    "@zaplabs/opencensus-exporter-stackdriver": "^0.0.7",
+    "@zaplabs/opencensus-exporter-zipkin": "^0.0.7",
+    "@zaplabs/opencensus-nodejs": "^0.0.7"
   }
 }

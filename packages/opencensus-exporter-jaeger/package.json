@@ -1,5 +1,5 @@
 {
-  "name": "@opencensus/exporter-jaeger",
+  "name": "@zaplabs/opencensus-exporter-jaeger",
   "version": "0.0.7",
   "description": "OpenCensus Exporter Jeager allows user to send collected traces to Jeager",
   "main": "build/src/index.js",
@@ -54,7 +54,7 @@
     "typescript": "~2.6.1"
   },
   "dependencies": {
-    "@opencensus/core": "^0.0.7",
+    "@zaplabs/opencensus-core": "^0.0.7",
     "jaeger-client": "~3.10.0"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@opencensus/propagation-stackdriver",
+  "name": "@zaplabs/opencensus-propagation-stackdriver",
   "version": "0.0.7",
   "description": "",
   "main": "build/src/index.js",
@@ -36,7 +36,6 @@
     "typescript": "~2.8.0"
   },
   "dependencies": {
-    "hex2dec": "^1.0.1",
     "uuid": "^3.2.1"
   },
   "files": [

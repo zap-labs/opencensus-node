@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import {Func} from '@opencensus/core';
-import {HttpPlugin} from '@opencensus/instrumentation-http';
+import {Func} from '@zaplabs/opencensus-core';
+import {HttpPlugin} from '@zaplabs/opencensus-instrumentation-http';
 import * as http from 'http';
 import * as https from 'https';
 import * as semver from 'semver';

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {BasePlugin, HeaderGetter, HeaderSetter, PluginInternalFiles, RootSpan, Span} from '@opencensus/core';
+import {BasePlugin, HeaderGetter, HeaderSetter, PluginInternalFiles, RootSpan, Span} from '@zaplabs/opencensus-core';
 import {EventEmitter} from 'events';
 import * as grpcTypes from 'grpc';
 import * as lodash from 'lodash';

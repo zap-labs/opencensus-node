@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {AggregationType, Measure, MeasureUnit, Stats} from '@opencensus/core';
+import {AggregationType, Measure, MeasureUnit, Stats} from '@zaplabs/opencensus-core';
 import * as assert from 'assert';
 import * as http from 'http';
 import {PrometheusStatsExporter} from '../src/';

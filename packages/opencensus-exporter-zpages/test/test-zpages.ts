@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {AggregationType, CountData, DistributionData, Measure, Measurement, MeasureUnit, RootSpan, Stats, SumData, Tags, TracerConfig} from '@opencensus/core';
+import {AggregationType, CountData, DistributionData, Measure, Measurement, MeasureUnit, RootSpan, Stats, SumData, Tags, TracerConfig} from '@zaplabs/opencensus-core';
 import * as assert from 'assert';
 import axios from 'axios';
 import * as http from 'http';
@@ -126,7 +126,7 @@ describe('Zpages Exporter', () => {
 
     before((done) => {
       /** Creating here because tracing is a singleton */
-      const tracing = require('@opencensus/nodejs');
+      const tracing = require('@zaplabs/opencensus-nodejs');
       zpages = new ZpagesExporter(options);
 
       tracing.start(defaultConfig);
@@ -167,7 +167,7 @@ describe('Zpages Exporter', () => {
 
     before((done) => {
       /** Creating here because tracing is a singleton */
-      const tracing = require('@opencensus/nodejs');
+      const tracing = require('@zaplabs/opencensus-nodejs');
       zpages = new ZpagesExporter(options);
 
       tracing.start(defaultConfig);

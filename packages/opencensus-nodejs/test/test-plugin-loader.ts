@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {CoreTracer, logger} from '@opencensus/core';
+import {CoreTracer, logger} from '@zaplabs/opencensus-core';
 import * as assert from 'assert';
 import * as path from 'path';
 

@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import {CoreTracer, RootSpan} from '@opencensus/core';
-import {logger} from '@opencensus/core';
+import {CoreTracer, RootSpan} from '@zaplabs/opencensus-core';
+import {logger} from '@zaplabs/opencensus-core';
 import * as assert from 'assert';
 import * as fs from 'fs';
 // TODO change to use import when type package for hex2dec will be available

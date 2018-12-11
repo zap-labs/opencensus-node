@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import {Exporter, ExporterBuffer, ExporterConfig, RootSpan, Span} from '@opencensus/core';
-import {logger, Logger} from '@opencensus/core';
+import {Exporter, ExporterBuffer, ExporterConfig, RootSpan, Span} from '@zaplabs/opencensus-core';
+import {logger, Logger} from '@zaplabs/opencensus-core';
 import {prototype} from 'events';
 import * as http from 'http';
 import * as url from 'url';

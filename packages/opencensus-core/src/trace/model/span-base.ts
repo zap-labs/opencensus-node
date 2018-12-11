@@ -65,6 +65,8 @@ export abstract class SpanBase implements types.Span {
   /** Gets the trace ID. */
   abstract get traceId(): string;
 
+  /** Gets the baggage. */
+  abstract get baggage(): string;
   /** Gets the trace state */
   abstract get traceState(): types.TraceState;
 
@@ -122,6 +124,7 @@ export abstract class SpanBase implements types.Span {
     return {
       traceId: this.traceId,
       spanId: this.id,
+      baggage: this.baggage,
       options: 0x1,  // always traced
       traceState: this.traceState
     };
